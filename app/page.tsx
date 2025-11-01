@@ -45,7 +45,8 @@ export default function Page() {
       </header>
 
       <main>
-        <ClientUpload />
+          <ClientUpload />
+
       </main>
     </>
   ); 
