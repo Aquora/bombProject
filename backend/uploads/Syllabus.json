@@ -1,0 +1,262 @@
+{
+  "assignments": [
+    {
+      "name": "HW0: General Principles",
+      "description": "In-class assignment covering Chapter 1: General Principles.",
+      "due_date": "2024-08-26"
+    },
+    {
+      "name": "HW1: Force Vectors",
+      "description": "Homework covering Chapters 2.1-2.4: Scalars and Vectors, Vector Operations, Vector Addition of Forces, Addition of Coplanar Forces. Problems: 2-1, 2-6, 2-10, 2-15, 2-24, 2-28, 2-33, 2-37, 2-52, 2-54, 2-55, 2-59.",
+      "due_date": "2024-09-04"
+    },
+    {
+      "name": "HW2: Cartesian and Position Vectors",
+      "description": "Homework covering Chapters 2.5-2.9: Cartesian Vectors, Addition of Cartesian Vectors, Position Vectors, Line Force Vectors, Dot Product. Problems: 2-63, 2-65, 2-67, 2-69, 2-74, 2-80, 2-88, 2-92, 2-97, 2-105, 2-119, 2-120.",
+      "due_date": "2024-09-11"
+    },
+    {
+      "name": "HW3: Equilibrium of a Particle",
+      "description": "Homework covering Chapters 3.1-3.4: Equilibrium of Particle, FBD of Particle, Coplanar Forces, 3-D Force. Problems: 3-3, 3-6, 3-11, 3-12, 3-27, 3-28, 3-40, 3-46, 3-47, 3-57, 3-62, 3-64.",
+      "due_date": "2024-09-16"
+    },
+    {
+      "name": "HW4: Force System Resultants (Moments)",
+      "description": "Homework covering Chapters 4.1-4.5: Scalar Moments, Principle of Moments, Cross Product, Vector Moments About a Point-3D, Vector Moments About an Axis-3D. Problems: 4-1, 4-5, 4-12, 4-29, 4-39, 4-47, 4-48, 4-53, 4-55, 4-60, 4-68, 4-70.",
+      "due_date": "2024-09-30"
+    },
+    {
+      "name": "HW5: Force System Resultants (Couples)",
+      "description": "Homework covering Chapters 4.6-4.7: Moment of a Couple, Simplify Force and Couple - Force and Moment. Problems: 4-82, 4-88, 4-96, 4-106, 4-109, 4-117, 4-122, 4-132, 4-139, 4-144, 4-154, 4-160.",
+      "due_date": "2024-10-07"
+    },
+    {
+      "name": "HW6: Equilibrium of a Rigid Body",
+      "description": "Homework covering Chapters 5.1-5.7: Equilibrium of Rigid Body, FBD of Rigid Body, Equations of Equilibrium, 2 and 3 Force Members. Problems: 5-11, 5-12, 5-13, 5-15, 5-23, 5-37, 5-41, 5-68, 5-71, 5-72, 5-78, 5-85.",
+      "due_date": "2024-10-14"
+    },
+    {
+      "name": "HW7: Trusses",
+      "description": "Homework covering Chapters 6.1-6.3: Trusses, Method of Joints (MOJ), Zero Force Members. Problems: 6-2, 6-4, 6-8, 6-17, 6-19, 6-20, 6-28, 6-32, 6-34, 6-36, 6-42, 6-49.",
+      "due_date": "2024-10-28"
+    },
+    {
+      "name": "HW8: Frames and Machines",
+      "description": "Homework covering Chapter 6.6: Frames and Machines. Problems: 6-66, 6-70, 6-72, 6-76, 6-78, 6-81, 6-83, 6-84, 6-99, 6-102, 6-108.",
+      "due_date": "2024-11-04"
+    },
+    {
+      "name": "HW9: Internal Loadings",
+      "description": "Homework covering Chapters 7.1-7.3: Internal Loadings, Shear and Moment Diagrams, Distributed Loading. Problems: 7-1, 7-7, 7-9, 7-11, 7-51, 7-53, 7-59, 7-81, 7-84, 7-88, 7-92, 7-93.",
+      "due_date": "2024-11-20"
+    },
+    {
+      "name": "HW10: Friction",
+      "description": "Homework covering Chapters 8.1-8.5: Dry Friction, Wedges, Screws, Belts. Problems: 8-1, 8-3, 8-26, 8-32, 8-42, 8-46, 8-50, 8-63, 8-86, 8-100.",
+      "due_date": "2024-11-25"
+    },
+    {
+      "name": "HW11: Center of Gravity and Moment of Inertia",
+      "description": "Homework covering Chapters 9.1-9.2, 10.1-10.2: CG, CM, and Centroids, Composite Bodies, Moment of Inertia, Parallel-Axis Theorem. Problems: 9-9, 9-11, 9-27, 9-61, 9-66, 9-67, 10-2, 10-29, 10-32, 10-35, 10-45, 10-52.",
+      "due_date": "2024-12-09"
+    },
+    {
+      "name": "Group Project",
+      "description": "A group project is due on the Friday of finals week. Further details will be provided in class.",
+      "due_date": "2024-12-13"
+    }
+  ],
+  "exams": [
+    {
+      "name": "Midterm #1",
+      "description": "Covers material from Weeks 1-3 (Chapters 1-3). The exam will be held during the second class meeting of Week 4.",
+      "due_date": "2024-09-18"
+    },
+    {
+      "name": "Midterm #2",
+      "description": "Covers material from Weeks 5-7 (Chapters 4-5). The exam will be held during the second class meeting of Week 8.",
+      "due_date": "2024-10-16"
+    },
+    {
+      "name": "Midterm #3",
+      "description": "Covers material from Weeks 9-10 (Chapter 6). The exam will be held during the second class meeting of Week 11.",
+      "due_date": "2024-11-06"
+    },
+    {
+      "name": "Final Exam",
+      "description": "Comprehensive final exam. Location: Room 61-2311. Time: 7:30 pm to 10:00 pm.",
+      "due_date": "2024-12-09"
+    }
+  ],
+  "lectures": [
+    {
+      "name": "Week 1: Introduction to Statics",
+      "description": "L1: Chapter 1 - General Principles. L2: Chapters 2.1-2.4 - Scalars and Vectors, Vector Operations, Vector Addition of Forces, Addition of Coplanar Forces."
+    },
+    {
+      "name": "Week 2: Force Vectors",
+      "description": "Holiday. L3: Chapters 2.5-2.9 - Cartesian Vectors, Addition of Cartesian Vectors, Position Vectors, Line Force Vectors, Dot Product."
+    },
+    {
+      "name": "Week 3: Equilibrium of a Particle",
+      "description": "L4: Chapters 3.1-3.2 - Equilibrium of Particle, FBD of Particle. L5: Chapters 3.3-3.4 - Coplanar Forces, 3-D Force."
+    },
+    {
+      "name": "Week 4: Midterm Review and Exam",
+      "description": "Midterm Review and Midterm #1."
+    },
+    {
+      "name": "Week 5: Force System Resultants I",
+      "description": "L7: Chapters 4.1-4.2 - Scalar Moments, Principle of Moments. L8: Chapters 4.3-4.5 - Cross Product, Vector Moments About a Point-3D, Vector Moments About an Axis-3D."
+    },
+    {
+      "name": "Week 6: Force System Resultants II",
+      "description": "L9: Chapters 4.6-4.7 - Moment of a Couple, Simplify Force and Couple - Force and Moment."
+    },
+    {
+      "name": "Week 7: Equilibrium of a Rigid Body",
+      "description": "L10: Chapters 4.8-4.9 - Further Simplification and Distributed Loading. L11: Chapters 5.1-5.3 - Equilibrium and FBD of Rigid Body. L12: Chapters 5.4-5.7 - 2/3 Force Members, Constraints."
+    },
+    {
+      "name": "Week 8: Midterm Review and Exam",
+      "description": "Midterm Review and Midterm #2."
+    },
+    {
+      "name": "Week 9: Structural Analysis - Trusses",
+      "description": "L13: Chapters 6.1-6.3 - Trusses, Method of Joints (MOJ), Zero Force Members."
+    },
+    {
+      "name": "Week 10: Structural Analysis - Frames and Machines",
+      "description": "L14: Chapter 6.4 - Method of Sections (MOS). L15-L16: Chapter 6.6 - Frames and Machines."
+    },
+    {
+      "name": "Week 11: Midterm Review and Exam",
+      "description": "Midterm Review, Project Introduction, and Midterm #3."
+    },
+    {
+      "name": "Week 12: Internal Forces",
+      "description": "L17a: Chapter 7.1 - Internal Loadings. L17b: Chapters 7.2-7.3 - Shear and Moment Diagrams, Distributed Loading."
+    },
+    {
+      "name": "Week 13: Friction",
+      "description": "L18: Chapters 8.1-8.2 - Dry Friction. L19: Chapters 8.3-8.5 - Wedges, Screws, Belts."
+    },
+    {
+      "name": "Week 14: Project Work",
+      "description": "Project Build and Project Demo."
+    },
+    {
+      "name": "Week 15: Center of Gravity and Moment of Inertia",
+      "description": "L20: Chapters 9.1-9.2 - CG, CM, Centroids, Composite Bodies. L21: Chapters 10.1-10.2 - Moment of Inertia, Parallel-Axis Theorem."
+    },
+    {
+      "name": "Week 16: Final Exam",
+      "description": "Chapter 10.4 - Moment of Inertia for Composite Areas. Final Exam is on Monday, Dec 9th."
+    }
+  ],
+  "external_material": {
+    "course_details": {
+      "college": "Mt. San Antonio College",
+      "course_name": "ENGR 40 – Statics",
+      "crn": "22203",
+      "term": "Fall 2024",
+      "schedule": "MW – 7:00 – 8:25 pm",
+      "location": "Room 61-2311",
+      "duration": "August 26 - Dec 15 (16 weeks including finals)",
+      "units": "3; CSU/UC transferrable; Letter Grade Only",
+      "website": "Log into Mt. SAC portal (http://inside.mtsac.edu) and click the 'sign on to Mt. SAC Canvas' link in the eLearning Resources tab."
+    },
+    "contact_information": {
+      "professor": "Tedd Wong",
+      "email": "twong76@mtsac.edu",
+      "office_phone": "909-274-4425",
+      "office_location": "61-2505",
+      "office_hours": "6:30 pm MW before class and 8:25 MW after class"
+    },
+    "course_expectations": [
+      "Access Canvas daily for information, notes, and assignments for this course.",
+      "Attend and participate in class by asking questions, answering questions, collaborating appropriately in all project and problem-solving activities.",
+      "Take course notes, read, and view supplemental materials before class and after class.",
+      "Complete all assignments and submit them by the due date.",
+      "Get together with other students and come to office hours to clarify what is not clear and to work on additional problems.",
+      "Complete your work on exams, homework, supplemental problems, and projects neatly and clearly.",
+      "Master understanding the material in this class."
+    ],
+    "grading_scale": {
+      "category_weights": [
+        {
+          "category": "Homework",
+          "percentage": 10
+        },
+        {
+          "category": "Midterm 1",
+          "percentage": 15
+        },
+        {
+          "category": "Midterm 2",
+          "percentage": 15
+        },
+        {
+          "category": "Midterm 3",
+          "percentage": 15
+        },
+        {
+          "category": "Project",
+          "percentage": 20
+        },
+        {
+          "category": "Final",
+          "percentage": 25
+        }
+      ],
+      "grade_distribution": [
+        {
+          "grade": "A",
+          "percentage": "90-100"
+        },
+        {
+          "grade": "B",
+          "percentage": "80-89"
+        },
+        {
+          "grade": "C",
+          "percentage": "70-79"
+        },
+        {
+          "grade": "D",
+          "percentage": "60-69"
+        },
+        {
+          "grade": "F",
+          "percentage": "59 <"
+        }
+      ]
+    },
+    "required_materials": {
+      "textbook": "Engineering Mechanics: Statics, by R.C. Hibbeler, 15th ed.",
+      "supplies": "Standard note-taking supplies, a scientific calculator that is NCEES/SAT/ACT approved (e.g., TI-36, TI-84), a straight-edge. Quad rule pad (graph paper) for completing homework is highly recommended."
+    },
+    "important_dates": [
+      {
+        "event": "Refund Deadline",
+        "date": "2024-09-06"
+      },
+      {
+        "event": "Last Day to Drop Without a 'W'",
+        "date": "2024-09-08"
+      },
+      {
+        "event": "Last Day to Drop With a 'W'",
+        "date": "2024-11-01"
+      },
+      {
+        "event": "Last Day to Drop for No-Show",
+        "date": "2024-09-06"
+      },
+      {
+        "event": "Last Day to add class",
+        "date": "2024-09-06"
+      }
+    ]
+  }
+}
