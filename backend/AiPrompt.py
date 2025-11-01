@@ -4,6 +4,8 @@ from pydantic import BaseModel
 import pathlib
 import json
 
+
+
 client = genai.Client(api_key = "AIzaSyBnqRQCzHgJU9l7tDBBTB-fLbLU_1yPkuQ")
 
 filepath = pathlib.Path('uploads/file.pdf')

@@ -1,4 +1,7 @@
 // app/api/upload/route.ts
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 import { NextResponse } from "next/server";
 import { writeFile, mkdir } from "fs/promises";
 import path from "path";
@@ -6,16 +9,26 @@ import path from "path";
 export async function POST(req: Request) {
   const formData = await req.formData();
   const files = formData.getAll("files") as File[];
-  const uploadDir = path.join(process.cwd(), "public", "uploads");
+
+  // Save into backend/uploads instead of public/uploads
+  const uploadDir = path.join(process.cwd(), "backend", "uploads");
   await mkdir(uploadDir, { recursive: true });
 
-  const urls: string[] = [];
+  const saved: { filename: string; diskPath: string; relativePath: string }[] = [];
+
   for (const f of files) {
     const bytes = await f.arrayBuffer();
     const buffer = Buffer.from(bytes);
     const filename = `${f.name}`;
-    await writeFile(path.join(uploadDir, filename), buffer);
-    urls.push(`/uploads/${filename}`); 
+    const filePath = path.join(uploadDir, filename);
+    await writeFile(filePath, buffer);
+
+    saved.push({
+      filename,
+      diskPath: filePath,                 // absolute path on disk
+      relativePath: `backend/uploads/${filename}`, // relative to project root
+    });
   }
-  return NextResponse.json({ urls });
+
+  return NextResponse.json({ ok: true, files: saved });
 }
