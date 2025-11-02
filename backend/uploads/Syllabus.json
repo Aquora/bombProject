@@ -6,278 +6,323 @@
   },
   "modules": [
     {
-      "module_name": "Course Information",
-      "assignments": [],
+      "module_name": "Week 1: Introduction, General Principles & Vector Operations",
+      "assignments": [
+        {
+          "name": "HW0",
+          "description": "In class assignment from Chapter 1.",
+          "due_date": {
+            "year": 2024,
+            "month": null,
+            "day": null
+          }
+        },
+        {
+          "name": "HW1",
+          "description": "Problems: 2-1, 2-6, 2-10, 2-15, 2-24, 2-28, 2-33, 2-37, 2-52, 2-54, 2-55, 2-59.",
+          "due_date": {
+            "year": 2024,
+            "month": null,
+            "day": null
+          }
+        }
+      ],
       "quiz_assignments": [],
       "materials": [
         {
           "name": "Instructor Information",
-          "description": "Professor: Tedd Wong\nE-mail Address: twong76@mtsac.edu\nOffice Phone: 909-274-4425\nOffice Location: 61-2505\nOffice Hours: 6:30 pm MW before class and 8:25 MW after class"
+          "description": "Professor: Tedd Wong, E-mail: twong76@mtsac.edu, Office Phone: 909-274-4425, Office Location: 61-2505, Office Hours: 6:30 pm MW before class and 8:25 MW after class."
         },
         {
           "name": "Course Details",
-          "description": "Days/Times/Location: Lecture: MW – 7:00 – 8:25 pm, Room 61-2311\nDuration: August 26 - Dec 15 (16 weeks including finals)\nUnits: 3; CSU/UC transferrable; Letter Grade Only;"
-        },
-        {
-          "name": "Course Web Site",
-          "description": "You will use Canvas for accessing announcements, lecture notes, homework solutions and for submitting assignments. To access Canvas, log into the Mt. SAC portal (http://inside.mtsac.edu) using your Mt. SAC username and password, then click the 'sign on to Mt. SAC Canvas' link in the eLearning Resources tab."
-        },
-        {
-          "name": "Course Description",
-          "description": "Vector approach to static equilibrium of rigid bodies, forces, couples in two and three- dimensional space. Application of equilibrium principles to trusses, frames, and machines. Calculation of center-of-mass and centroid. Friction, moment of inertia, distributed and concentrated loads. Forces in cables and beams. Fluid statics. Introduction to virtual work. PRE-REQUISITES: PHYS 4A and MATH 181 (Calc 2)"
+          "description": "Course: ENGR 40 – Statics. Duration: August 26 - Dec 15. Units: 3. Vector approach to static equilibrium of rigid bodies, forces, couples in two and three- dimensional space. PRE-REQUISITES: PHYS 4A and MATH 181 (Calc 2)."
         },
         {
           "name": "Required Materials",
-          "description": "Engineering Mechanics: Statics, by R.C. Hibbeler, 15th ed. Standard note-taking supplies, a scientific calculator that is NCEES/SAT/ACT approved (e.g., TI-36, TI-84), a straight-edge. Quad rule pad (graph paper) for completing homework is highly recommended."
+          "description": "Textbook: Engineering Mechanics: Statics, by R.C. Hibbeler, 15th ed. Also needed: Standard note-taking supplies, a scientific calculator (NCEES/SAT/ACT approved), a straight-edge. Quad rule pad (graph paper) is highly recommended."
         },
         {
-          "name": "Student Learning Objectives",
-          "description": "Students are required to: be able to draw free-body diagrams of rigid bodies; be able to apply equations of static equilibrium to two- and three- dimensional problems; be able to determine centroids by integration; be able to expand the usage of equations of static equilibrium to distributed loads and submerged areas; be able to determine internal forces in trusses, frames and machines; be able to analyze systems involving friction such as wedges, belts and screws; be able to use parallel-axis theorem to calculate moment of inertia of structural members; be able to apply principle of virtual work to solve equilibrium problems; be able to analyze a typical truss to determine the force in a truss member; be able to draw a free body diagram for a multi-force member and determine reactions."
+          "name": "Course Web Site",
+          "description": "Canvas will be used for announcements, lecture notes, homework solutions and for submitting assignments. Access via the Mt. SAC portal (http://inside.mtsac.edu)."
         },
         {
-          "name": "Grading Scale",
-          "description": "Homework: 10%, Midterm 1: 15%, Midterm 2: 15%, Midterm 3: 15%, Project: 20%, Final: 25%. Grade Scale: 90-100 A, 80-89 B, 70-79 C, 60-69 D, 59< F."
+          "name": "Lecture L1: General Principles",
+          "description": "Topic: Chapter 1 - General Principles, Chapter 2.1 - Scalars and Vectors."
         },
         {
-          "name": "Important Dates",
-          "description": "Refund Deadline: 06-Sep-2024\nLast Day to Drop Without a 'W': 8-SEP-2024\nLast Day to Drop With a 'W': 01-NOV-2024\nLast Day to Drop for No-Show: 06-SEP-2024\nLast Day to add class: 06-SEP-2024"
+          "name": "Lecture L2: Vector Operations",
+          "description": "Topics: Chapter 2.2 - Vector Operations, Chapter 2.3 - Vector Addition of Forces, Chapter 2.4 - Addition of Coplanar Forces."
         }
       ]
     },
     {
-      "module_name": "Week 1",
-      "assignments": [
-        {
-          "name": "HW0",
-          "description": "In class assignment.",
-          "due_date": null
-        },
-        {
-          "name": "HW1",
-          "description": "Problems: 2-1, 2-6, 2-10, 2-15, 2-24, 2-28, 2-33, 2-37, 2-52, 2-54, 2-55, 2-59",
-          "due_date": null
-        }
-      ],
-      "quiz_assignments": [],
-      "materials": [
-        {
-          "name": "L1 & L2 Topics",
-          "description": "Chapter 1: General Principles\nChapter 2.1: Scalars and Vectors\nChapter 2.2: Vector Operations\nChapter 2.3: Vector Addition of Forces\nChapter 2.4: Addition of Coplanar Forces"
-        }
-      ]
-    },
-    {
-      "module_name": "Week 2",
+      "module_name": "Week 2: Cartesian Vectors & Force Vectors",
       "assignments": [
         {
           "name": "HW2",
-          "description": "Problems: 2-63, 2-65, 2-67, 2-69, 2-74, 2-80, 2-88, 2-92, 2-97, 2-105, 2-119, 2-120",
-          "due_date": null
+          "description": "Problems: 2-63, 2-65, 2-67, 2-69, 2-74, 2-80, 2-88, 2-92, 2-97, 2-105, 2-119, 2-120.",
+          "due_date": {
+            "year": 2024,
+            "month": null,
+            "day": null
+          }
         }
       ],
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "L3 Topics",
-          "description": "Chapter 2.5: Cartesian Vectors\nChapter 2.6: Addition of Cartesian Vectors\nChapter 2.7: Position Vectors\nChapter 2.8: Line Force Vectors\nChapter 2.9: Dot Product"
+          "name": "Lecture L3: Vectors in Depth",
+          "description": "Topics: Chapter 2.5 - Cartesian Vectors, Chapter 2.6 - Addition of Cartesian Vectors, Chapter 2.7 - Position Vectors, Chapter 2.8 - Line Force Vectors, Chapter 2.9 - Dot Product."
         }
       ]
     },
     {
-      "module_name": "Week 3",
+      "module_name": "Week 3: Equilibrium of a Particle",
       "assignments": [
         {
           "name": "HW3",
-          "description": "Problems: 3-3, 3-6, 3-11, 3-12, 3-27, 3-28, 3-40, 3-46, 3-47, 3-57, 3-62, 3-64",
-          "due_date": null
+          "description": "Problems: 3-3, 3-6, 3-11, 3-12, 3-27, 3-28, 3-40, 3-46, 3-47, 3-57, 3-62, 3-64.",
+          "due_date": {
+            "year": 2024,
+            "month": null,
+            "day": null
+          }
         }
       ],
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "L4 & L5 Topics",
-          "description": "Chapter 3.1: Equilibrium of Particle\nChapter 3.2: FBD of Particle\nChapter 3.3: Coplanar Forces\nChapter 3.4: 3-D Force"
+          "name": "Lecture L4: Particle Equilibrium",
+          "description": "Topics: Chapter 3.1 - Equilibrium of Particle, Chapter 3.2 - FBD of Particle, Chapter 3.3 - Coplanar Forces."
+        },
+        {
+          "name": "Lecture L5: 3-D Force",
+          "description": "Topic: Chapter 3.4 - 3-D Force."
         }
       ]
     },
     {
-      "module_name": "Week 4",
+      "module_name": "Week 4: Midterm #1",
       "assignments": [],
       "quiz_assignments": [
         {
           "name": "Midterm #1",
-          "description": "Covers material from weeks 1-3.",
-          "due_date": null
+          "description": "First midterm exam covering material from weeks 1-3.",
+          "due_date": {
+            "year": 2024,
+            "month": 9,
+            "day": 18
+          }
         }
       ],
       "materials": [
         {
           "name": "Midterm Review",
-          "description": "Review for Midterm #1."
+          "description": "Review session for Midterm #1."
         }
       ]
     },
     {
-      "module_name": "Week 5",
+      "module_name": "Week 5: Moments",
       "assignments": [
         {
           "name": "HW4",
-          "description": "Problems: 4-1, 4-5, 4-12, 4-29, 4-39, 4-47, 4-48, 4-53, 4-55, 4-60, 4-68, 4-70",
-          "due_date": null
+          "description": "Problems: 4-1, 4-5, 4-12, 4-29, 4-39, 4-47, 4-48, 4-53, 4-55, 4-60, 4-68, 4-70.",
+          "due_date": {
+            "year": 2024,
+            "month": null,
+            "day": null
+          }
         }
       ],
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "L7 & L8 Topics",
-          "description": "Chapter 4.1: Scalar Moments\nChapter 4.2: Principle of Moments\nChapter 4.3: Cross Product\nChapter 4.4: Vector Moments About a Point-3D"
+          "name": "Lecture L7: Scalar Moments",
+          "description": "Topics: Chapter 4.1 - Scalar Moments, Chapter 4.2 - Principle of Moments."
+        },
+        {
+          "name": "Lecture L8: Vector Moments",
+          "description": "Topics: Chapter 4.3 - Cross Product, Chapter 4.4 - Vector Moments About a Point-3D, Chapter 4.5 - Vector Moments About an Axis-3D."
         }
       ]
     },
     {
-      "module_name": "Week 6",
+      "module_name": "Week 6: Couples and Force Systems",
       "assignments": [
         {
           "name": "HW5",
-          "description": "Problems: 4-82, 4-88, 4-96, 4-106, 4-109, 4-117, 4-122, 4-132, 4-139, 4-144, 4-154, 4-160",
-          "due_date": null
+          "description": "Problems: 4-82, 4-88, 4-96, 4-106, 4-109, 4-117, 4-122, 4-132, 4-139, 4-144, 4-154, 4-160.",
+          "due_date": {
+            "year": 2024,
+            "month": null,
+            "day": null
+          }
         }
       ],
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "L9 Topics",
-          "description": "Chapter 4.5: Vector Moments About an Axis-3D\nChapter 4.6: Moment of a Couple\nChapter 4.7: Simplify Force and Couple - Force and Moment"
+          "name": "Lecture L9: Force and Couple Systems",
+          "description": "Topics: Chapter 4.6 - Moment of a Couple, Chapter 4.7 - Simplify Force and Couple - Force and Moment."
         }
       ]
     },
     {
-      "module_name": "Week 7",
+      "module_name": "Week 7: Equilibrium of Rigid Bodies",
       "assignments": [
         {
           "name": "HW6",
-          "description": "Problems: 5-11, 5-12, 5-13, 5-15, 5-23, 5-37, 5-41, 5-68, 5-71, 5-72, 5-78, 5-85",
-          "due_date": null
+          "description": "Problems: 5-11, 5-12, 5-13, 5-15, 5-23, 5-37, 5-41, 5-68, 5-71, 5-72, 5-78, 5-85.",
+          "due_date": {
+            "year": 2024,
+            "month": null,
+            "day": null
+          }
         }
       ],
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "L10, L11 & L12 Topics",
-          "description": "Chapter 4.8 & 4.9: Simplify Force and Couple, Distributed Loading\nChapter 5.1-5.3: Equilibrium of Rigid Body\nChapter 5.4-5.7: 2 and 3 Force Members, Constraints and Determinacy"
+          "name": "Lecture L10 & L11 & L12: Rigid Body Equilibrium",
+          "description": "Topics covering Chapters 4.8, 4.9, and 5.1 through 5.7, including Distributed Loading, Equilibrium of Rigid Body, FBDs, and Equations of Equilibrium."
         }
       ]
     },
     {
-      "module_name": "Week 8",
+      "module_name": "Week 8: Midterm #2",
       "assignments": [],
       "quiz_assignments": [
         {
           "name": "Midterm #2",
-          "description": "Covers material from weeks 5-7.",
-          "due_date": null
+          "description": "Second midterm exam.",
+          "due_date": {
+            "year": 2024,
+            "month": 10,
+            "day": 16
+          }
         }
       ],
       "materials": [
         {
           "name": "Midterm Review",
-          "description": "Review for Midterm #2."
+          "description": "Review session for Midterm #2."
         }
       ]
     },
     {
-      "module_name": "Week 9",
+      "module_name": "Week 9: Trusses",
       "assignments": [
         {
           "name": "HW7",
-          "description": "Problems: 6-2, 6-4, 6-8, 6-17, 6-19, 6-20, 6-28, 6-32, 6-34, 6-36, 6-42, 6-49",
-          "due_date": null
+          "description": "Problems: 6-2, 6-4, 6-8, 6-17, 6-19, 6-20, 6-28, 6-32, 6-34, 6-36, 6-42, 6-49.",
+          "due_date": {
+            "year": 2024,
+            "month": null,
+            "day": null
+          }
         }
       ],
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "L13 & L14 Topics",
-          "description": "Chapter 6.1: Trusses\nChapter 6.2: Method of Joints (MOJ)\nChapter 6.3: Zero Force Members\nChapter 6.4: Method of Sections (MOS)"
+          "name": "Lecture L13 & L14: Structural Analysis - Trusses",
+          "description": "Topics: Chapter 6.1 - Trusses, Chapter 6.2 - Method of Joints (MOJ), Chapter 6.3 - Zero Force Members, Chapter 6.4 - Method of Sections (MOS)."
         }
       ]
     },
     {
-      "module_name": "Week 10",
+      "module_name": "Week 10: Frames and Machines",
       "assignments": [
         {
           "name": "HW8",
-          "description": "Problems: 6-66, 6-70, 6-72, 6-76, 6-78, 6-81, 6-83, 6-84, 6-99, 6-102, 6-108",
-          "due_date": null
+          "description": "Problems: 6-66, 6-70, 6-72, 6-76, 6-78, 6-81, 6-83, 6-84, 6-99, 6-102, 6-108.",
+          "due_date": {
+            "year": 2024,
+            "month": null,
+            "day": null
+          }
         }
       ],
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "L15 & L16 Topics",
-          "description": "Chapter 6.6: Frames and Machines"
+          "name": "Lecture L15 & L16: Frames and Machines",
+          "description": "Topic: Chapter 6.6 - Frames and Machines."
         }
       ]
     },
     {
-      "module_name": "Week 11",
+      "module_name": "Week 11: Midterm #3",
       "assignments": [],
       "quiz_assignments": [
         {
           "name": "Midterm #3",
-          "description": "Covers material from weeks 9-10.",
-          "due_date": null
+          "description": "Third midterm exam.",
+          "due_date": {
+            "year": 2024,
+            "month": 11,
+            "day": 6
+          }
         }
       ],
       "materials": [
         {
           "name": "Midterm Review and Project Introduction",
-          "description": "Review for Midterm #3 and introduction to the group project."
+          "description": "Review for Midterm #3 and introduction to the course project."
         }
       ]
     },
     {
-      "module_name": "Week 12",
+      "module_name": "Week 12: Internal Loadings and Diagrams",
       "assignments": [
         {
           "name": "HW9",
-          "description": "Problems: 7-1, 7-7, 7-9, 7-11, 7-51, 7-53, 7-59, 7-81, 7-84, 7-88, 7-92, 7-93",
-          "due_date": null
+          "description": "Problems: 7-1, 7-7, 7-9, 7-11, 7-51, 7-53, 7-59, 7-81, 7-84, 7-88, 7-92, 7-93.",
+          "due_date": {
+            "year": 2024,
+            "month": null,
+            "day": null
+          }
         }
       ],
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "L17a & L17b Topics",
-          "description": "Chapter 7.1: Internal Loadings\nChapter 7.2: Shear and Moment Diagrams\nChapter 7.3: Distributed Loading, Shear and Moment"
+          "name": "Lecture L17a & L17b: Internal Forces",
+          "description": "Topics: Chapter 7.1 - Internal Loadings, Chapter 7.2 - Shear and Moment Diagrams, Chapter 7.3 - Distributed Loading, Shear and Moment."
         }
       ]
     },
     {
-      "module_name": "Week 13",
+      "module_name": "Week 13: Friction",
       "assignments": [
         {
           "name": "HW10",
-          "description": "Problems: 8-1, 8-3, 8-26, 8-32, 8-42, 8-46, 8-50, 8-63, 8-86, 8-100",
-          "due_date": null
+          "description": "Problems: 8-1, 8-3, 8-26, 8-32, 8-42, 8-46, 8-50, 8-63, 8-86, 8-100.",
+          "due_date": {
+            "year": 2024,
+            "month": null,
+            "day": null
+          }
         }
       ],
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "L18 & L19 Topics",
-          "description": "Chapter 8.1: Dry Friction\nChapter 8.2: Dry Friction Problems\nChapter 8.3: Wedges\nChapter 8.4: Screws\nChapter 8.5: Belts"
+          "name": "Lecture L18 & L19: Friction and Applications",
+          "description": "Topics: Chapter 8.1 - Dry Friction, Chapter 8.2 - Dry Friction Problems, Chapter 8.3 - Wedges, Chapter 8.4 - Screws, Chapter 8.5 - Belts."
         }
       ]
     },
     {
-      "module_name": "Week 14",
+      "module_name": "Week 14: Project Work",
       "assignments": [],
       "quiz_assignments": [],
       "materials": [
         {
           "name": "Project Build",
-          "description": "Time dedicated to working on the group project."
+          "description": "In-class time dedicated to working on the group project."
         },
         {
           "name": "Project Demo",
@@ -286,28 +331,36 @@
       ]
     },
     {
-      "module_name": "Week 15",
+      "module_name": "Week 15: Centroids and Moment of Inertia",
       "assignments": [
         {
           "name": "HW11",
-          "description": "Problems: 9-9, 9-11, 9-27, 9-61, 9-66, 9-67, 10-2, 10-29, 10-32, 10-35, 10-45, 10-52",
-          "due_date": null
+          "description": "Problems: 9-9, 9-11, 9-27, 9-61, 9-66, 9-67, 10-2, 10-29, 10-32, 10-35, 10-45, 10-52.",
+          "due_date": {
+            "year": 2024,
+            "month": null,
+            "day": null
+          }
         }
       ],
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "L20 & L21 Topics",
-          "description": "Chapter 9.1: CG, CM, and Centroids\nChapter 9.2: Composite Bodies\nChapter 10.1: Moment of Inertia\nChapter 10.2: Parallel-Axis Theorem"
+          "name": "Lecture L20: Center of Gravity and Centroids",
+          "description": "Topics: Chapter 9.1 - CG, CM, and Centroids, Chapter 9.2 - Composite Bodies."
+        },
+        {
+          "name": "Lecture L21: Moment of Inertia",
+          "description": "Topics: Chapter 10.1 - Moment of Inertia, Chapter 10.2 - Parallel-Axis Theorem."
         }
       ]
     },
     {
-      "module_name": "Week 16 (Finals)",
+      "module_name": "Week 16: Final Exam Week",
       "assignments": [
         {
           "name": "Group Project",
-          "description": "Group project due on the Friday of finals week.",
+          "description": "The final group project submission is due.",
           "due_date": {
             "year": 2024,
             "month": 12,
@@ -318,7 +371,7 @@
       "quiz_assignments": [
         {
           "name": "Final Exam",
-          "description": "Final exam on Monday, December 9th from 7:30 pm to 10:00 pm in room 61-2311.",
+          "description": "Cumulative final exam held on Monday, December 9th from 7:30 pm to 10:00 pm in room 61-2311.",
           "due_date": {
             "year": 2024,
             "month": 12,
@@ -329,7 +382,7 @@
       "materials": [
         {
           "name": "Final Topics",
-          "description": "Chapter 10.4: Moment of Inertia for Composite Areas"
+          "description": "Topic: Chapter 10.4 - Moment of Inertia for Composite Areas."
         }
       ]
     }
