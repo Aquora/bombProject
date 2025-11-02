@@ -87,7 +87,6 @@ export async function POST(req: Request) {
       await fs.unlink(tempPdf).catch(() => {});
     }
 
-    // Determine which JSON was produced
     const producedJson = (await fileExists(jsonForName)) ? jsonForName
                         : (await fileExists(jsonDefault)) ? jsonDefault
                         : null;
@@ -100,9 +99,7 @@ export async function POST(req: Request) {
       }, { status: 500 });
     }
 
-    // --- Step 2: run BuildClassroom with the JSON path ---
-    // Assumes your BuildClassroom.py accepts:  --json <path>
-    // If it doesn't, adjust args to what your script expects.
+    
     const buildArgs = [buildScriptAbs, "--json", producedJson];
     const { stdout: buildStdout, stderr: buildStderr, exitCode: buildExit } =
       await runPython(PYTHON_BIN, buildArgs, { cwd: backendDir, timeoutMs });
@@ -116,7 +113,6 @@ export async function POST(req: Request) {
       }, { status: 500 });
     }
 
-    // Success
     return NextResponse.json({
       ok: true,
       inputPdf: srcPdf,
