@@ -38,7 +38,7 @@ export default function Page() {
               priority
               className="rounded-md"
             />
-            <h1 className="text-lg bg black font-semibold">Smart Classroom</h1>
+            <h1 className="text-lg text-white font-semibold">Smart Classroom</h1>
           </div>
           <LoginButton />
         </div>
