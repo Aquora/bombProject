@@ -1,5 +1,4 @@
 import ClientUpload from "../components/ClientUpload";
-import LoginButton from "../components/Login";
 import { Metadata } from "next";
 import Image from "next/image";
 

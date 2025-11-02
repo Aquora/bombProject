@@ -1,5 +1,4 @@
 import ClientUpload from "../app/components/ClientUpload";
-import LoginButton from "./components/Login";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -62,7 +61,6 @@ export default function Page() {
           </p>
 
           <div className="mt-6">
-            <LoginButton />
           </div>
         </section>
 
