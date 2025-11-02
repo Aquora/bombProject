@@ -9,23 +9,13 @@ import fs from 'node:fs/promises';
 
 const PYTHON_BIN = 'python';
 
-function isPlainFilename(name: string) {
-  return !!name && name === path.basename(name);
-}
-
 export async function POST(req: Request) {
   try {
     const { filename, script } = (await req.json()) as {
       filename: string;
-      script?: string;
+      script: string;
     };
 
-    if (!isPlainFilename(filename) || !filename.toLowerCase().endsWith('.pdf')) {
-      return NextResponse.json({ error: 'filename must be a plain .pdf file name' }, { status: 400 });
-    }
-    if (!script) {
-      return NextResponse.json({ error: 'Provide script path (e.g. "scripts/ai.py")' }, { status: 400 });
-    }
 
     const projectRoot = process.cwd();
     const backendDir  = path.join(projectRoot, 'backend');

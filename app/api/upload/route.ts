@@ -10,7 +10,6 @@ export async function POST(req: Request) {
   const formData = await req.formData();
   const files = formData.getAll("files") as File[];
 
-  // Save into backend/uploads instead of public/uploads
   const uploadDir = path.join(process.cwd(), "backend", "uploads");
   await mkdir(uploadDir, { recursive: true });
 
