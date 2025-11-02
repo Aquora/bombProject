@@ -22,6 +22,8 @@ CLIENT_SECRETS_FILE = "credentials.json"
 BASE_DIR = Path(__file__).resolve().parent          # .../bombProject/backend
 json_path = BASE_DIR / "uploads/Syllabus.json"
 
+#json_path = BASE_DIR / "sampleResponse.json" #testing
+
 llmResponse = None
 
 with open(json_path, "r", encoding="utf-8") as f:
@@ -198,8 +200,10 @@ def createMaterial(creds, course, llmResponse, i, j, topic):
         print(f"An error occurred in createMaterial: {error}")
         return None
     
+
+    
 def buildAll(creds, llmResponse, course):
-    for i, obj in enumerate(llmResponse["modules"]):
+    for i in range(len(llmResponse["modules"]) - 1, -1, -1):
         currTopic = buildModule(creds, course, llmResponse, i)
         for j,temp in enumerate(llmResponse["modules"][i]["assignments"]):
             createAssignment(creds, course, llmResponse, "assignments", i, j, currTopic)
