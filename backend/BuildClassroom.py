@@ -6,4 +6,3 @@ course = createCourse(credentials,llmResponse)
 
 buildAll(credentials,llmResponse,course)
 
-courseURL = course.get('alternateLink')
