@@ -7,7 +7,6 @@ import { spawn } from "node:child_process";
 import path from "node:path";
 import fs from "node:fs/promises";
 
-const PYTHON_BIN = "python";          // bare python, as you requested
 const DEFAULT_TIMEOUT_MS = 90_000;
 
 function isPlainFilename(name: string) {
@@ -34,13 +33,52 @@ function runPython(cmd: string, args: string[], opts: { cwd: string; timeoutMs?:
   });
 }
 
+// ---- NEW: detect a Python 3 interpreter (tries python, python3, py -3, etc.) ----
+type PySpec = { cmd: string; args: string[] };
+
+async function detectPython(cwd: string, timeoutMs = DEFAULT_TIMEOUT_MS): Promise<PySpec> {
+  const candidates: PySpec[] = [];
+
+  const envBin = (process.env.PYTHON_BIN || "").trim();
+  if (envBin) candidates.push({ cmd: envBin, args: [] });
+
+  if (process.platform === "win32") {
+    candidates.push({ cmd: "py", args: ["-3"] });
+    candidates.push({ cmd: "python", args: [] });
+    candidates.push({ cmd: "python3", args: [] });
+  } else {
+    candidates.push({ cmd: "python", args: [] });
+    candidates.push({ cmd: "python3", args: [] });
+    // env fallback
+    candidates.push({ cmd: "/usr/bin/env", args: ["python3"] });
+  }
+
+  for (const spec of candidates) {
+    try {
+      const probe = await runPython(
+        spec.cmd,
+        [...spec.args, "-c", "import sys; print(sys.version_info[0])"],
+        { cwd, timeoutMs }
+      );
+      if (probe.exitCode === 0 && probe.stdout.startsWith("3")) {
+        return spec; // success: Python 3
+      }
+    } catch {
+      // ignore ENOENT / spawn errors; try next candidate
+    }
+  }
+
+  // Fallback to something reasonable (won't pass the probe but avoids undefined)
+  return candidates[0] ?? { cmd: "python", args: [] };
+}
+
 export async function POST(req: Request) {
   try {
     const { filename, aiScript = "backend/AiPrompt.py", buildScript = "backend/BuildClassroom.py", timeoutMs } =
       (await req.json()) as {
-        filename: string;                    // e.g. "MySyllabus.pdf"
-        aiScript?: string;                   // default: backend/AiPrompt.py
-        buildScript?: string;                // default: backend/BuildClassroom.py
+        filename: string;
+        aiScript?: string;
+        buildScript?: string;
         timeoutMs?: number;
       };
 
@@ -51,13 +89,16 @@ export async function POST(req: Request) {
     const projectRoot   = process.cwd();
     const backendDir    = path.join(projectRoot, "backend");
     const uploadsDir    = path.join(backendDir, "uploads");
-    const srcPdf        = path.join(uploadsDir, filename);            // original uploaded file
-    const tempPdf       = path.join(uploadsDir, "file.pdf");          // what AiPrompt expects
-    const jsonForName   = path.join(uploadsDir, filename.replace(/\.pdf$/i, ".json")); // if AI names by input
-    const jsonDefault   = path.join(uploadsDir, "Syllabus.json");     // if AI writes a fixed name
+    const srcPdf        = path.join(uploadsDir, filename);
+    const tempPdf       = path.join(uploadsDir, "file.pdf");
+    const jsonForName   = path.join(uploadsDir, filename.replace(/\.pdf$/i, ".json"));
+    const jsonDefault   = path.join(uploadsDir, "Syllabus.json");
 
     const aiScriptAbs   = path.join(projectRoot, aiScript);
     const buildScriptAbs= path.join(projectRoot, buildScript);
+
+    // ---- pick Python 3 first
+    const py = await detectPython(backendDir, timeoutMs ?? DEFAULT_TIMEOUT_MS);
 
     // Validate presence
     if (!(await fileExists(srcPdf))) {
@@ -77,16 +118,14 @@ export async function POST(req: Request) {
     // --- Step 1: run AI to create JSON ---
     let aiStdout = "", aiStderr = "", aiExit = -1;
     try {
-      const r = await runPython(PYTHON_BIN, [aiScriptAbs], { cwd: backendDir, timeoutMs });
+      const r = await runPython(py.cmd, [...py.args, aiScriptAbs], { cwd: backendDir, timeoutMs });
       aiStdout = r.stdout; aiStderr = r.stderr; aiExit = r.exitCode;
-      if (aiExit !== 0) {
-        throw new Error(`AI script exited with ${aiExit}\n${aiStderr || aiStdout}`);
-      }
+      if (aiExit !== 0) throw new Error(`AI script exited with ${aiExit}\n${aiStderr || aiStdout}`);
     } finally {
-      // Always remove the temp pdf
       await fs.unlink(tempPdf).catch(() => {});
     }
 
+    // Determine produced JSON
     const producedJson = (await fileExists(jsonForName)) ? jsonForName
                         : (await fileExists(jsonDefault)) ? jsonDefault
                         : null;
@@ -99,10 +138,9 @@ export async function POST(req: Request) {
       }, { status: 500 });
     }
 
-    
-    const buildArgs = [buildScriptAbs, "--json", producedJson];
+    // --- Step 2: Build Classroom ---
     const { stdout: buildStdout, stderr: buildStderr, exitCode: buildExit } =
-      await runPython(PYTHON_BIN, buildArgs, { cwd: backendDir, timeoutMs });
+      await runPython(py.cmd, [...py.args, buildScriptAbs, "--json", producedJson], { cwd: backendDir, timeoutMs });
 
     if (buildExit !== 0) {
       return NextResponse.json({
