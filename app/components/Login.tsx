@@ -44,12 +44,14 @@ export default function LoginButtonClient({
     <button
       onClick={onClick ?? defaultClick}
       disabled={busy}
-      className="inline-flex items-center justify-center gap-2 rounded-full 
-                 bg-green-400 text-white font-semibold px-6 py-2 text-sm 
-                 shadow-md transition-all duration-200
-                 hover:bg-green-500 active:scale-[0.97]
-                 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2
-                 disabled:opacity-60"
+        className="relative inline-flex items-center justify-center gap-3 rounded-full 
+              bg-gradient-to-r from-green-300 to-green-600 text-white font-bold 
+              px-10 py-4 text-xl shadow-[0_8px_20px_rgba(72,187,120,0.4)] 
+              hover:from-green-500 hover:to-green-700 hover:shadow-[0_10px_25px_rgba(72,187,120,0.5)]
+              active:scale-[0.97] transition-all duration-200 ease-in-out
+              focus:outline-none focus-visible:ring-4 focus-visible:ring-green-400 focus-visible:ring-offset-2
+              disabled:opacity-60"
+
     >
       {busy ? "Loading..." : label}
     </button>
