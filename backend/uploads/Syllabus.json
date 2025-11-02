@@ -1,0 +1,375 @@
+{
+  "ClassInfo": {
+    "courseName": "ENGR 40 – Statics",
+    "CRN": "22203",
+    "roomNumber": "61-2311"
+  },
+  "modules": [
+    {
+      "module_name": "General Course Information",
+      "assignments": [],
+      "materials": [
+        {
+          "name": "Instructor Information",
+          "description": "Professor: Tedd Wong, E-mail Address: twong76@mtsac.edu, Office Phone: 909-274-4425, Office Location: 61-2505, Office Hours: 6:30 pm MW before class and 8:25 MW after class."
+        },
+        {
+          "name": "Course Details",
+          "description": "Units: 3; CSU/UC transferrable; Letter Grade Only. Duration: August 26 - Dec 15 (16 weeks including finals). Course Web Site: Canvas (http://inside.mtsac.edu). PRE-REQUISITES: PHYS 4A and MATH 181 (Calc 2)."
+        },
+        {
+          "name": "Course Description",
+          "description": "Vector approach to static equilibrium of rigid bodies, forces, couples in two and three- dimensional space. Application of equilibrium principles to trusses, frames, and machines. Calculation of center-of-mass and centroid. Friction, moment of inertia, distributed and concentrated loads. Forces in cables and beams. Fluid statics. Introduction to virtual work."
+        },
+        {
+          "name": "Required Materials",
+          "description": "Textbook: Engineering Mechanics: Statics, by R.C. Hibbeler, 15th ed. Other materials: Standard note-taking supplies, a scientific calculator that is NCEES/SAT/ACT approved (e.g., TI-36, TI-84), a straight-edge. Quad rule pad (graph paper) is highly recommended."
+        },
+        {
+          "name": "Grading Scale",
+          "description": "Homework: 10%, Midterm 1: 15%, Midterm 2: 15%, Midterm 3: 15%, Project: 20%, Final: 25%. Grade Scale: 90-100=A, 80-89=B, 70-79=C, 60-69=D, 59<=F."
+        },
+        {
+          "name": "Important Dates",
+          "description": "Refund Deadline: 06-Sep-2024; Last Day to Drop Without a 'W': 8-Sep-2024; Last Day to Drop With a 'W': 01-Nov-2024; Last Day to Drop for No-Show: 06-Sep-2024; Last Day to add class: 06-Sep-2024."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 1 (Aug 26 - Sep 1)",
+      "assignments": [
+        {
+          "name": "HW0",
+          "description": "In class assignment.",
+          "due_date": {
+            "year": 2024,
+            "month": 8,
+            "day": 28
+          }
+        },
+        {
+          "name": "HW1",
+          "description": "Homework problems from Chapter 2: 2-1, 2-6, 2-10, 2-15, 2-24, 2-28, 2-33, 2-37, 2-52, 2-54, 2-55, 2-59.",
+          "due_date": {
+            "year": 2024,
+            "month": 9,
+            "day": 2
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Lecture L1",
+          "description": "Chapter 1: General Principles."
+        },
+        {
+          "name": "Lecture L2",
+          "description": "Chapters 2.1-2.4: Scalars and Vectors, Vector Operations, Vector Addition of Forces, Addition of Coplanar Forces."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 2 (Sep 2 - Sep 8)",
+      "assignments": [
+        {
+          "name": "HW2",
+          "description": "Homework problems from Chapter 2: 2-63, 2-65, 2-67, 2-69, 2-74, 2-80, 2-88, 2-92, 2-97, 2-105, 2-119, 2-120.",
+          "due_date": {
+            "year": 2024,
+            "month": 9,
+            "day": 9
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Lecture L3",
+          "description": "Chapters 2.5-2.9: Cartesian Vectors, Addition of Cartesian Vectors, Position Vectors, Line Force Vectors, Dot Product."
+        },
+        {
+          "name": "Holiday",
+          "description": "Holiday this week."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 3 (Sep 9 - Sep 15)",
+      "assignments": [
+        {
+          "name": "HW3",
+          "description": "Homework problems from Chapter 3: 3-3, 3-6, 3-11, 3-12, 3-27, 3-28, 3-40, 3-46, 3-47, 3-57, 3-62, 3-64.",
+          "due_date": {
+            "year": 2024,
+            "month": 9,
+            "day": 16
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Lecture L4 & L5",
+          "description": "Chapters 3.1-3.4: Equilibrium of Particle, FBD of Particle, Coplanar Forces, 3-D Force."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 4 (Sep 16 - Sep 22)",
+      "assignments": [
+        {
+          "name": "Midterm #1",
+          "description": "First midterm exam.",
+          "due_date": {
+            "year": 2024,
+            "month": 9,
+            "day": 18
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Midterm Review",
+          "description": "Review session for Midterm #1."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 5 (Sep 23 - Sep 29)",
+      "assignments": [
+        {
+          "name": "HW4",
+          "description": "Homework problems from Chapter 4: 4-1, 4-5, 4-12, 4-29, 4-39, 4-47, 4-48, 4-53, 4-55, 4-60, 4-68, 4-70.",
+          "due_date": {
+            "year": 2024,
+            "month": 9,
+            "day": 30
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Lecture L7 & L8",
+          "description": "Chapters 4.1-4.5: Scalar Moments, Principle of Moments, Cross Product, Vector Moments About a Point-3D, Vector Moments About an Axis-3D."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 6 (Sep 30 - Oct 6)",
+      "assignments": [
+        {
+          "name": "HW5",
+          "description": "Homework problems from Chapter 4: 4-82, 4-88, 4-96, 4-106, 4-109, 4-117, 4-122, 4-132, 4-139, 4-144, 4-154, 4-160.",
+          "due_date": {
+            "year": 2024,
+            "month": 10,
+            "day": 7
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Lecture L9",
+          "description": "Chapters 4.6-4.7: Moment of a Couple, Simplify Force and Couple - Force and Moment."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 7 (Oct 7 - Oct 13)",
+      "assignments": [
+        {
+          "name": "HW6",
+          "description": "Homework problems from Chapter 5: 5-11, 5-12, 5-13, 5-15, 5-23, 5-37, 5-41, 5-68, 5-71, 5-72, 5-78, 5-85.",
+          "due_date": {
+            "year": 2024,
+            "month": 10,
+            "day": 14
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Lecture L10, L11, L12",
+          "description": "Chapters 4.8-5.7: Distributed Loading, Equilibrium of Rigid Body, FBD, Equations of Equilibrium, 2 and 3 Force Members, Constraints and Determinacy."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 8 (Oct 14 - Oct 20)",
+      "assignments": [
+        {
+          "name": "Midterm #2",
+          "description": "Second midterm exam.",
+          "due_date": {
+            "year": 2024,
+            "month": 10,
+            "day": 16
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Midterm Review",
+          "description": "Review session for Midterm #2."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 9 (Oct 21 - Oct 27)",
+      "assignments": [
+        {
+          "name": "HW7",
+          "description": "Homework problems from Chapter 6: 6-2, 6-4, 6-8, 6-17, 6-19, 6-20, 6-28, 6-32, 6-34, 6-36, 6-42, 6-49.",
+          "due_date": {
+            "year": 2024,
+            "month": 10,
+            "day": 28
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Lecture L13",
+          "description": "Chapters 6.1-6.3: Trusses, Method of Joints (MOJ), Zero Force Members."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 10 (Oct 28 - Nov 3)",
+      "assignments": [
+        {
+          "name": "HW8",
+          "description": "Homework problems from Chapter 6: 6-66, 6-70, 6-72, 6-76, 6-78, 6-81, 6-83, 6-84, 6-99, 6-102, 6-108.",
+          "due_date": {
+            "year": 2024,
+            "month": 11,
+            "day": 4
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Lecture L14, L15, L16",
+          "description": "Chapters 6.4 & 6.6: Method of Sections (MOS), Frames and Machines."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 11 (Nov 4 - Nov 10)",
+      "assignments": [
+        {
+          "name": "Midterm #3",
+          "description": "Third midterm exam.",
+          "due_date": {
+            "year": 2024,
+            "month": 11,
+            "day": 6
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Midterm Review and Project Introduction",
+          "description": "Review for Midterm #3 and introduction of the group project."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 12 (Nov 11 - Nov 17)",
+      "assignments": [
+        {
+          "name": "HW9",
+          "description": "Homework problems from Chapter 7: 7-1, 7-7, 7-9, 7-11, 7-51, 7-53, 7-59, 7-81, 7-84, 7-88, 7-92, 7-93.",
+          "due_date": {
+            "year": 2024,
+            "month": 11,
+            "day": 18
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Lecture L17a & L17b",
+          "description": "Chapters 7.1-7.3: Internal Loadings, Shear and Moment Diagrams, Distributed Loading."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 13 (Nov 18 - Nov 24)",
+      "assignments": [
+        {
+          "name": "HW10",
+          "description": "Homework problems from Chapter 8: 8-1, 8-3, 8-26, 8-32, 8-42, 8-46, 8-50, 8-63, 8-86, 8-100.",
+          "due_date": {
+            "year": 2024,
+            "month": 11,
+            "day": 25
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Lecture L18 & L19",
+          "description": "Chapters 8.1-8.5: Dry Friction, Wedges, Screws, Belts."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 14 (Nov 25 - Dec 1)",
+      "assignments": [],
+      "materials": [
+        {
+          "name": "Project Build & Demo",
+          "description": "Time dedicated to building and demonstrating group projects."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 15 (Dec 2 - Dec 8)",
+      "assignments": [
+        {
+          "name": "HW11",
+          "description": "Homework problems from Chapters 9 & 10: 9-9, 9-11, 9-27, 9-61, 9-66, 9-67, 10-2, 10-29, 10-32, 10-35, 10-45, 10-52.",
+          "due_date": {
+            "year": 2024,
+            "month": 12,
+            "day": 9
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Lecture L20 & L21",
+          "description": "Chapters 9.1-9.2 & 10.1-10.2: CG, CM, and Centroids, Composite Bodies, Moment of Inertia, Parallel-Axis Theorem."
+        }
+      ]
+    },
+    {
+      "module_name": "Week 16 / Finals (Dec 9 - Dec 15)",
+      "assignments": [
+        {
+          "name": "Final Exam",
+          "description": "Final Exam takes place on Monday, December 9th from 7:30 pm to 10:00 pm in room 61-2311.",
+          "due_date": {
+            "year": 2024,
+            "month": 12,
+            "day": 9
+          }
+        },
+        {
+          "name": "Group Project",
+          "description": "Final submission for the group project.",
+          "due_date": {
+            "year": 2024,
+            "month": 12,
+            "day": 13
+          }
+        }
+      ],
+      "materials": [
+        {
+          "name": "Final Lecture",
+          "description": "Chapter 10.4: Moment of Inertia for Composite Areas."
+        }
+      ]
+    }
+  ]
+}
