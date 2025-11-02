@@ -31,7 +31,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Image
-              src="/Images/faviconseal.png" 
+              src="/Images/faviconseal.png" // file should live in /public/images/
               alt="Smart Classroom"
               width={40}
               height={40}
@@ -40,11 +40,11 @@ export default function Page() {
             />
             <h1 className="text-lg text-white font-semibold">Smart Classroom</h1>
           </div>
+          <LoginButton />
         </div>
       </header>
 
       <main>
-        
       </main>
     </>
   ); 
