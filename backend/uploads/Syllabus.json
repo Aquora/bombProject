@@ -6,38 +6,38 @@
   },
   "modules": [
     {
-      "module_name": "Week 1",
+      "module_name": "Week 1: Introduction and Data Representation",
       "assignments": [],
       "quiz_assignments": [],
       "materials": [
         {
           "name": "Instructor Information",
-          "description": "Instructor: Jonathan Johannsen, Email: jjohannsen1@mtsac.edu, Office Location: 61-1612, Office Phone: (909) 274-4669. Office Hours: Monday and Wednesday from 12:15pm – 1:45pm, and Tuesday and Thursday from 8:40am – 9:10am."
+          "description": "Instructor: Jonathan Johannsen. Email: jjohannsen1@mtsac.edu. Office Phone: (909) 274-4669. Office Location: 61-1612. Office Hours: Monday/Wednesday from 12:15 – 1:45pm, and Tuesday/Thursday from 8:40 – 9:10am."
         },
         {
-          "name": "Course Requirements",
-          "description": "Textbook: Assembly Language for x86 Processors Eighth Edition by Kip Irvine, ISBN 9780136681649. Required Software: Access to a Windows computer with Microsoft Visual Studio 2022 community edition installed. Prerequisite: CSCI 110. Advisory: CSCI 140 or CSCI 145."
+          "name": "Course Policies and Resources",
+          "description": "Covers attendance, lab activities, late submission policy, grading, academic integrity, accommodations, tutoring services, and other campus resources."
         },
         {
-          "name": "Course Policies",
-          "description": "Covers attendance, lab activities, homework, projects, late submissions, quizzes, and exams. Grading Policy: Lab Exercises (5%), Participation (5%), Quizzes (5%), Homework and Projects (15%), Exam #1 (20%), Exam #2 (20%), Final (30%)."
+          "name": "Textbook and Required Software",
+          "description": "Textbook: Assembly Language for x86 Processors Eighth Edition by Kip Irvine, ISBN 9780136681649. Software: Access to a Windows computer with Microsoft Visual Studio 2022 community edition installed."
         },
         {
-          "name": "Class Session: Aug 26",
-          "description": "Topic: Introduction, Basic Concepts, Data Representation. Lab: Binary Conversions."
+          "name": "Lecture: Aug 26",
+          "description": "Topic: Introduction, Basic Concepts, Data Representation. Lab: Binary Conversions. Chapter 1."
         },
         {
-          "name": "Class Session: Aug 28",
-          "description": "Topic: Data Representation. Lab: Binary Subtraction and Two's Complement."
+          "name": "Lecture: Aug 28",
+          "description": "Topic: Data Representation. Lab: Binary Subtraction and Two's Complement. Chapter 1."
         }
       ]
     },
     {
-      "module_name": "Week 2",
+      "module_name": "Week 2: Data Representation and x86 Architecture",
       "assignments": [
         {
-          "name": "Homework #1",
-          "description": "Assigned Sep 4. Written problems to be completed on paper, typically involving writing small segments of assembly language code by hand.",
+          "name": "Homework #1 Assigned",
+          "description": "Homework #1 is assigned. It will involve writing small segments of assembly language code by hand.",
           "due_date": {
             "year": 2025,
             "month": 9,
@@ -48,22 +48,32 @@
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "Class Session: Sep 2",
-          "description": "Topic: Data Representation. Lab: Working with Hexadecimal."
+          "name": "Lecture: Sep 2",
+          "description": "Topic: Data Representation. Lab: Working with Hexadecimal. Chapter 1."
         },
         {
-          "name": "Class Session: Sep 4",
-          "description": "Topic: x86 Processor Architecture. Lab: Identifying Computer Components."
+          "name": "Lecture: Sep 4",
+          "description": "Topic: x86 Processor Architecture. Lab: Identifying Computer Components. Chapter 2."
         }
       ]
     },
     {
-      "module_name": "Week 3",
-      "assignments": [],
+      "module_name": "Week 3: Assembly Language Fundamentals",
+      "assignments": [
+        {
+          "name": "Homework #1 Due",
+          "description": "Homework #1 is due.",
+          "due_date": {
+            "year": 2025,
+            "month": 9,
+            "day": 11
+          }
+        }
+      ],
       "quiz_assignments": [
         {
           "name": "Quiz #1",
-          "description": "Scheduled quiz consisting of multiple choice, true/false, and short answer questions.",
+          "description": "First scheduled quiz, consisting of multiple choice, true/false, and short answer questions.",
           "due_date": {
             "year": 2025,
             "month": 9,
@@ -73,21 +83,21 @@
       ],
       "materials": [
         {
-          "name": "Class Session: Sep 9",
-          "description": "Topic: Assembly Language Fundamentals. Lab: Handwriting Assembly Language Code."
+          "name": "Lecture: Sep 9",
+          "description": "Topic: Assembly Language Fundamentals. Lab: Handwriting Assembly Language Code. Chapter 3."
         },
         {
-          "name": "Class Session: Sep 11",
-          "description": "Topic: Assembly Language Fundamentals. Lab: Running our First Assembly Program."
+          "name": "Lecture: Sep 11",
+          "description": "Topic: Assembly Language Fundamentals. Lab: Running our First Assembly Program. Chapter 3."
         }
       ]
     },
     {
-      "module_name": "Week 4",
+      "module_name": "Week 4: Data Transfers, Addressing, and Arithmetic",
       "assignments": [
         {
-          "name": "Homework #2",
-          "description": "Assigned Sep 16. Written problems to be completed on paper, typically involving writing small segments of assembly language code by hand.",
+          "name": "Homework #2 Assigned",
+          "description": "Homework #2 is assigned.",
           "due_date": {
             "year": 2025,
             "month": 9,
@@ -98,7 +108,7 @@
       "quiz_assignments": [
         {
           "name": "Quiz #2",
-          "description": "Scheduled quiz consisting of multiple choice, true/false, and short answer questions.",
+          "description": "Second scheduled quiz.",
           "due_date": {
             "year": 2025,
             "month": 9,
@@ -108,36 +118,46 @@
       ],
       "materials": [
         {
-          "name": "Class Session: Sep 16",
-          "description": "Topic: Data Transfers, Addressing, and Arithmetic. Lab: Signed and Unsigned Operations. Checking for Overflow and Carry."
+          "name": "Lecture: Sep 16",
+          "description": "Topic: Data Transfers, Addressing, and Arithmetic. Lab: Signed and Unsigned Operations. Checking for Overflow and Carry. Chapter 4."
         },
         {
-          "name": "Class Session: Sep 18",
-          "description": "Topic: Data Transfers, Addressing, and Arithmetic. Lab: Working with Arrays Using Pointer Arithmetic."
+          "name": "Lecture: Sep 18",
+          "description": "Topic: Data Transfers, Addressing, and Arithmetic. Lab: Working with Arrays Using Pointer Arithmetic. Chapter 4."
         }
       ]
     },
     {
-      "module_name": "Week 5",
-      "assignments": [],
+      "module_name": "Week 5: Arithmetic and Procedures",
+      "assignments": [
+        {
+          "name": "Homework #2 Due",
+          "description": "Homework #2 is due.",
+          "due_date": {
+            "year": 2025,
+            "month": 9,
+            "day": 23
+          }
+        }
+      ],
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "Class Session: Sep 23",
-          "description": "Topic: Data Transfers, Addressing, and Arithmetic. Lab: Processing Arrays with the Loop Instruction."
+          "name": "Lecture: Sep 23",
+          "description": "Topic: Data Transfers, Addressing, and Arithmetic. Lab: Processing Arrays with the Loop Instruction. Chapter 4."
         },
         {
-          "name": "Class Session: Sep 25",
-          "description": "Topic: Procedures. Lab: Writing and Calling our own Procedures."
+          "name": "Lecture: Sep 25",
+          "description": "Topic: Procedures. Lab: Writing and Calling our own Procedures. Chapter 5."
         }
       ]
     },
     {
-      "module_name": "Week 6",
+      "module_name": "Week 6: Exam 1 and Procedures",
       "assignments": [
         {
-          "name": "Project #1",
-          "description": "Assigned Oct 2. Involves creating a complete working program in assembly language.",
+          "name": "Project #1 Assigned",
+          "description": "First of three projects assigned. Involves creating a complete working program in assembly language.",
           "due_date": {
             "year": 2025,
             "month": 10,
@@ -158,18 +178,18 @@
       ],
       "materials": [
         {
-          "name": "Class Session: Oct 2",
-          "description": "Topic: Procedures. Lab: Using the Irvine32 Library."
+          "name": "Lecture: Oct 2",
+          "description": "Topic: Procedures. Lab: Using the Irvine32 Library. Chapter 5."
         }
       ]
     },
     {
-      "module_name": "Week 7",
+      "module_name": "Week 7: Conditional Processing",
       "assignments": [],
       "quiz_assignments": [
         {
           "name": "Quiz #3",
-          "description": "Scheduled quiz consisting of multiple choice, true/false, and short answer questions.",
+          "description": "Third scheduled quiz.",
           "due_date": {
             "year": 2025,
             "month": 10,
@@ -179,21 +199,30 @@
       ],
       "materials": [
         {
-          "name": "Class Session: Oct 7",
-          "description": "Topic: Conditional Processing. Lab: A Program to Calculate Letter Grades."
+          "name": "Lecture: Oct 7",
+          "description": "Topic: Conditional Processing. Lab: A Program to Calculate Letter Grades. Chapter 6."
         },
         {
-          "name": "Class Session: Oct 9",
-          "description": "Topic: Conditional Processing. Lab: A Simple While Loop Menu."
+          "name": "Lecture: Oct 9",
+          "description": "Topic: Conditional Processing. Lab: A Simple While Loop Menu. Chapter 6."
         }
       ]
     },
     {
-      "module_name": "Week 8",
+      "module_name": "Week 8: Integer Arithmetic",
       "assignments": [
         {
-          "name": "Homework #3",
-          "description": "Assigned Oct 16. Written problems to be completed on paper, typically involving writing small segments of assembly language code by hand.",
+          "name": "Project #1 Due",
+          "description": "Project #1 is due.",
+          "due_date": {
+            "year": 2025,
+            "month": 10,
+            "day": 14
+          }
+        },
+        {
+          "name": "Homework #3 Assigned",
+          "description": "Homework #3 is assigned.",
           "due_date": {
             "year": 2025,
             "month": 10,
@@ -204,22 +233,32 @@
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "Class Session: Oct 14",
-          "description": "Topic: Integer Arithmetic. Lab: Applying Shifts to Extract Data."
+          "name": "Lecture: Oct 14",
+          "description": "Topic: Integer Arithmetic. Lab: Applying Shifts to Extract Data. Chapter 7."
         },
         {
-          "name": "Class Session: Oct 16",
-          "description": "Topic: Integer Arithmetic. Lab: Comparing Multiplication and Division Techniques."
+          "name": "Lecture: Oct 16",
+          "description": "Topic: Integer Arithmetic. Lab: Comparing Multiplication and Division Techniques. Chapter 7."
         }
       ]
     },
     {
-      "module_name": "Week 9",
-      "assignments": [],
+      "module_name": "Week 9: Advanced Procedures",
+      "assignments": [
+        {
+          "name": "Homework #3 Due",
+          "description": "Homework #3 is due.",
+          "due_date": {
+            "year": 2025,
+            "month": 10,
+            "day": 23
+          }
+        }
+      ],
       "quiz_assignments": [
         {
           "name": "Quiz #4",
-          "description": "Scheduled quiz consisting of multiple choice, true/false, and short answer questions.",
+          "description": "Fourth scheduled quiz.",
           "due_date": {
             "year": 2025,
             "month": 10,
@@ -229,21 +268,21 @@
       ],
       "materials": [
         {
-          "name": "Class Session: Oct 21",
-          "description": "Topic: Advanced Procedures. Lab: Passing Arguments on the Stack."
+          "name": "Lecture: Oct 21",
+          "description": "Topic: Advanced Procedures. Lab: Passing Arguments on the Stack. Chapter 8."
         },
         {
-          "name": "Class Session: Oct 23",
-          "description": "Topic: Advanced Procedures. Lab: Implementing Recursion."
+          "name": "Lecture: Oct 23",
+          "description": "Topic: Advanced Procedures. Lab: Implementing Recursion. Chapter 8."
         }
       ]
     },
     {
-      "module_name": "Week 10",
+      "module_name": "Week 10: Strings and Arrays",
       "assignments": [
         {
-          "name": "Project #2",
-          "description": "Assigned Oct 30. Involves creating a complete working program in assembly language.",
+          "name": "Project #2 Assigned",
+          "description": "Second of three projects assigned.",
           "due_date": {
             "year": 2025,
             "month": 11,
@@ -254,17 +293,17 @@
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "Class Session: Oct 28",
-          "description": "Topic: Strings and Arrays. Lab: Repeating String and Array Operations."
+          "name": "Lecture: Oct 28",
+          "description": "Topic: Strings and Arrays. Lab: Repeating String and Array Operations. Chapter 9."
         },
         {
-          "name": "Class Session: Oct 30",
-          "description": "Topic: Strings and Arrays. Lab: Searching and Sorting Arrays."
+          "name": "Lecture: Oct 30",
+          "description": "Topic: Strings and Arrays. Lab: Searching and Sorting Arrays. Chapter 9."
         }
       ]
     },
     {
-      "module_name": "Week 11",
+      "module_name": "Week 11: Exam 2 and Structures/Macros",
       "assignments": [],
       "quiz_assignments": [
         {
@@ -279,17 +318,17 @@
       ],
       "materials": [
         {
-          "name": "Class Session: Nov 6",
-          "description": "Topic: Structures and Macros. Lab: Building and Using a Simple Structure."
+          "name": "Lecture: Nov 6",
+          "description": "Topic: Structures and Macros. Lab: Building and Using a Simple Structure. Chapter 10."
         }
       ]
     },
     {
-      "module_name": "Week 12",
+      "module_name": "Week 12: Structures and Macros",
       "assignments": [
         {
-          "name": "Homework #4",
-          "description": "Assigned Nov 13. Written problems to be completed on paper, typically involving writing small segments of assembly language code by hand.",
+          "name": "Homework #4 Assigned",
+          "description": "Homework #4 is assigned.",
           "due_date": {
             "year": 2025,
             "month": 11,
@@ -300,21 +339,30 @@
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "Holiday: Nov 11",
+          "name": "No Class: Nov 11",
           "description": "No Class: Veteran's Day."
         },
         {
-          "name": "Class Session: Nov 13",
-          "description": "Topic: Structures and Macros. Lab: Using Macros."
+          "name": "Lecture: Nov 13",
+          "description": "Topic: Structures and Macros. Lab: Using Macros. Chapter 10."
         }
       ]
     },
     {
-      "module_name": "Week 13",
+      "module_name": "Week 13: Floating-Point Processing",
       "assignments": [
         {
-          "name": "Project #3",
-          "description": "Assigned Nov 20. Involves creating a complete working program in assembly language.",
+          "name": "Project #2 Due",
+          "description": "Project #2 is due.",
+          "due_date": {
+            "year": 2025,
+            "month": 11,
+            "day": 18
+          }
+        },
+        {
+          "name": "Project #3 Assigned",
+          "description": "Third and final project assigned.",
           "due_date": {
             "year": 2025,
             "month": 12,
@@ -325,7 +373,7 @@
       "quiz_assignments": [
         {
           "name": "Quiz #5",
-          "description": "Scheduled quiz consisting of multiple choice, true/false, and short answer questions.",
+          "description": "Fifth and final scheduled quiz.",
           "due_date": {
             "year": 2025,
             "month": 11,
@@ -335,52 +383,72 @@
       ],
       "materials": [
         {
-          "name": "Class Session: Nov 18",
-          "description": "Topic: Floating-Point Processing. Lab: Practice with IEEE 754 Format."
+          "name": "Lecture: Nov 18",
+          "description": "Topic: Floating-Point Processing. Lab: Practice with IEEE 754 Format. Chapter 12."
         },
         {
-          "name": "Class Session: Nov 20",
-          "description": "Topic: Floating-Point Processing. Lab: Floating Point Registers."
+          "name": "Lecture: Nov 20",
+          "description": "Topic: Floating-Point Processing. Lab: Floating Point Registers. Chapter 12."
         }
       ]
     },
     {
-      "module_name": "Week 14",
-      "assignments": [],
+      "module_name": "Week 14: Floating-Point Processing",
+      "assignments": [
+        {
+          "name": "Homework #4 Due",
+          "description": "Homework #4 is due.",
+          "due_date": {
+            "year": 2025,
+            "month": 11,
+            "day": 25
+          }
+        }
+      ],
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "Class Session: Nov 25",
-          "description": "Topic: Floating-Point Processing. Lab: Writing Code that Performs Floating-Point Calculations."
+          "name": "Lecture: Nov 25",
+          "description": "Topic: Floating-Point Processing. Lab: Writing Code that Performs Floating-Point Calculations. Chapter 12."
         },
         {
-          "name": "Holiday: Nov 27",
+          "name": "No Class: Nov 27",
           "description": "No Class: Thanksgiving."
         }
       ]
     },
     {
-      "module_name": "Week 15",
+      "module_name": "Week 15: Memory Management",
       "assignments": [],
       "quiz_assignments": [],
       "materials": [
         {
-          "name": "Class Session: Dec 2",
-          "description": "Topic: Memory Management. Lab: Dynamic Memory Allocation."
+          "name": "Lecture: Dec 2",
+          "description": "Topic: Memory Management. Lab: Dynamic Memory Allocation. Chapter 11."
         },
         {
-          "name": "Class Session: Dec 4",
-          "description": "Topic: Memory Management. Lab: Understanding Memory."
+          "name": "Lecture: Dec 4",
+          "description": "Topic: Memory Management. Lab: Understanding Memory. Chapter 11."
         }
       ]
     },
     {
-      "module_name": "Week 16",
-      "assignments": [],
+      "module_name": "Week 16: Final Exams",
+      "assignments": [
+        {
+          "name": "Project #3 Due",
+          "description": "Project #3 is due.",
+          "due_date": {
+            "year": 2025,
+            "month": 12,
+            "day": 11
+          }
+        }
+      ],
       "quiz_assignments": [
         {
           "name": "Final Exam (Lecture)",
-          "description": "Written portion of the final exam, taking place from 1:30pm - 4pm.",
+          "description": "Written portion of the final exam, from 1:30pm - 4pm.",
           "due_date": {
             "year": 2025,
             "month": 12,
@@ -389,7 +457,7 @@
         },
         {
           "name": "Final Exam (Lab)",
-          "description": "Programming portion of the final exam, taking place from 1:30pm - 4pm.",
+          "description": "Programming portion of the final exam, from 1:30pm - 4pm.",
           "due_date": {
             "year": 2025,
             "month": 12,
@@ -397,12 +465,7 @@
           }
         }
       ],
-      "materials": [
-        {
-          "name": "Finals Week",
-          "description": "This week is dedicated to the final exams for the course."
-        }
-      ]
+      "materials": []
     }
   ]
 }

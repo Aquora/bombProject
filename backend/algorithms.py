@@ -20,7 +20,7 @@ TOKEN_FILE = "token.json"
 CLIENT_SECRETS_FILE = "credentials.json"
 
 BASE_DIR = Path(__file__).resolve().parent          # .../bombProject/backend
-json_path = BASE_DIR / "sampleResponse.json"
+json_path = BASE_DIR / "uploads/Syllabus.json"
 
 llmResponse = None
 
