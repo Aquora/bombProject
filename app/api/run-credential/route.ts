@@ -6,7 +6,7 @@ import { spawn } from "node:child_process";
 
 import path from "node:path";
 
-const PYTHON_BIN = process.env.PYTHON_BIN || "python"; // or "python3"
+const PYTHON_BIN = process.env.PYTHON_BIN || "python"; 
 const DEFAULT_TIMEOUT_MS = 30_000;
 
 

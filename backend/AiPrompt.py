@@ -100,7 +100,6 @@ response = client.models.generate_content(
 try:
     payload = json.loads(response.text or "")
 except json.JSONDecodeError:
-    # Fallback: wrap raw text so you still get a valid JSON file
     payload = {"raw": response.text}
 
 out_path = pathlib.Path("uploads/Syllabus.json")

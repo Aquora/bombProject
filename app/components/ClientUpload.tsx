@@ -37,8 +37,8 @@ export default function ClientUpload() {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            filename: name,          // plain filename, e.g. "mySyllabus.pdf"
-            script: AI_SCRIPT,       // path relative to project root
+            filename: name,          
+            script: AI_SCRIPT,       
           }),
         });
 

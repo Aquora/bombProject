@@ -1,4 +1,3 @@
-// app/api/upload/route.ts
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
@@ -24,8 +23,8 @@ export async function POST(req: Request) {
 
     saved.push({
       filename,
-      diskPath: filePath,                 // absolute path on disk
-      relativePath: `backend/uploads/${filename}`, // relative to project root
+      diskPath: filePath,                 
+      relativePath: `backend/uploads/${filename}`,
     });
   }
 

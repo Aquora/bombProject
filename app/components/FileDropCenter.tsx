@@ -1,4 +1,3 @@
-// app/components/FileDropCenter.tsx
 "use client";
 
 import { useRef, useState } from "react";

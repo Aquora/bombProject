@@ -1,4 +1,3 @@
-// app/api/run-ai-and-build/route.ts
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
@@ -7,7 +6,7 @@ import { spawn } from "node:child_process";
 import path from "node:path";
 import fs from "node:fs/promises";
 
-const PYTHON_BIN = "python";          // bare python, as you requested
+const PYTHON_BIN = "python";          
 const DEFAULT_TIMEOUT_MS = 90_000;
 
 function isPlainFilename(name: string) {
@@ -38,9 +37,9 @@ export async function POST(req: Request) {
   try {
     const { filename, aiScript = "backend/AiPrompt.py", buildScript = "backend/BuildClassroom.py", timeoutMs } =
       (await req.json()) as {
-        filename: string;                    // e.g. "MySyllabus.pdf"
-        aiScript?: string;                   // default: backend/AiPrompt.py
-        buildScript?: string;                // default: backend/BuildClassroom.py
+        filename: string;                    
+        aiScript?: string;                   
+        buildScript?: string;                
         timeoutMs?: number;
       };
 
@@ -51,30 +50,18 @@ export async function POST(req: Request) {
     const projectRoot   = process.cwd();
     const backendDir    = path.join(projectRoot, "backend");
     const uploadsDir    = path.join(backendDir, "uploads");
-    const srcPdf        = path.join(uploadsDir, filename);            // original uploaded file
-    const tempPdf       = path.join(uploadsDir, "file.pdf");          // what AiPrompt expects
-    const jsonForName   = path.join(uploadsDir, filename.replace(/\.pdf$/i, ".json")); // if AI names by input
-    const jsonDefault   = path.join(uploadsDir, "Syllabus.json");     // if AI writes a fixed name
+    const srcPdf        = path.join(uploadsDir, filename);            
+    const tempPdf       = path.join(uploadsDir, "file.pdf");          
+    const jsonForName   = path.join(uploadsDir, filename.replace(/\.pdf$/i, ".json")); 
+    const jsonDefault   = path.join(uploadsDir, "Syllabus.json");     
 
     const aiScriptAbs   = path.join(projectRoot, aiScript);
     const buildScriptAbs= path.join(projectRoot, buildScript);
 
-    // Validate presence
-    if (!(await fileExists(srcPdf))) {
-      return NextResponse.json({ ok: false, error: `Uploaded file not found at ${srcPdf}` }, { status: 404 });
-    }
-    if (!(await fileExists(aiScriptAbs))) {
-      return NextResponse.json({ ok: false, error: `AI script not found at ${aiScriptAbs}` }, { status: 404 });
-    }
-    if (!(await fileExists(buildScriptAbs))) {
-      return NextResponse.json({ ok: false, error: `Build script not found at ${buildScriptAbs}` }, { status: 404 });
-    }
 
-    // Prepare temp input for AI
     await fs.mkdir(uploadsDir, { recursive: true });
     await fs.copyFile(srcPdf, tempPdf);
 
-    // --- Step 1: run AI to create JSON ---
     let aiStdout = "", aiStderr = "", aiExit = -1;
     try {
       const r = await runPython(PYTHON_BIN, [aiScriptAbs], { cwd: backendDir, timeoutMs });
@@ -83,7 +70,6 @@ export async function POST(req: Request) {
         throw new Error(`AI script exited with ${aiExit}\n${aiStderr || aiStdout}`);
       }
     } finally {
-      // Always remove the temp pdf
       await fs.unlink(tempPdf).catch(() => {});
     }
 
