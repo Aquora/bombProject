@@ -1,4 +1,4 @@
-from algorithms import *
+from backend.GoogleLogic import *
 
 credentials = get_credentials()
 
