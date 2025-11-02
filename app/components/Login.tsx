@@ -31,9 +31,10 @@ export default function LoginButtonClient({
       // ✅ success: navigate
       router.push(`${successHref}?ok=1&ts=${Date.now()}`);
     } catch (err: any) {
-      // ❌ failure: navigate (or keep alert if you prefer)
-      router.push(`${failureHref}?err=${encodeURIComponent(err?.message || "Script failed")}`);
-      // or: alert(`Script failed: ${err?.message || String(err)}`);
+      // ❌ failure: navigate
+      router.push(
+        `${failureHref}?err=${encodeURIComponent(err?.message || "Script failed")}`
+      );
     } finally {
       setBusy(false);
     }
@@ -43,11 +44,14 @@ export default function LoginButtonClient({
     <button
       onClick={onClick ?? defaultClick}
       disabled={busy}
-      className="inline-flex items-center gap-2 rounded-full border border-neutral-300 bg-white/80 px-4 py-2 text-sm font-medium shadow-sm backdrop-blur
-                 transition hover:bg-white active:scale-[0.98]
-                 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:opacity-60"
+      className="inline-flex items-center justify-center gap-2 rounded-full 
+                 bg-green-400 text-white font-semibold px-6 py-2 text-sm 
+                 shadow-md transition-all duration-200
+                 hover:bg-green-500 active:scale-[0.97]
+                 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2
+                 disabled:opacity-60"
     >
-      {busy ? "Running…" : label}
+      {busy ? "Loading..." : label}
     </button>
   );
 }
