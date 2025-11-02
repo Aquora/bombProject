@@ -2,26 +2,40 @@
 import { MouseEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
+type Props = {
+  label?: string;
+  onClick?: (e: MouseEvent<HTMLButtonElement>) => void;
+  successHref?: string; // where to go on success
+  failureHref?: string; // where to go on failure
+};
 
-type Props = { label?: string; onClick?: (e: MouseEvent<HTMLButtonElement>) => void };
-
-export default function LoginButtonClient({ label = "Log in", onClick }: Props) {
+export default function LoginButtonClient({
+  label = "Log in",
+  onClick,
+  successHref = "/import",
+  failureHref = "/error",
+}: Props) {
   const [busy, setBusy] = useState(false);
   const router = useRouter();
-  
 
   const defaultClick = async (e: MouseEvent<HTMLButtonElement>) => {
     setBusy(true);
     try {
       const res = await fetch("/api/run-credential", { method: "POST" });
       const json = await res.json();
-      if (!res.ok || !json?.ok) throw new Error(json?.error || json?.stderr || `HTTP ${res.status}`);
-      console.log("stdout:", json.stdout);
+
+      if (!res.ok || !json?.ok) {
+        throw new Error(json?.error || json?.stderr || `HTTP ${res.status}`);
+      }
+
+      // ✅ success: navigate
+      router.push(`${successHref}?ok=1&ts=${Date.now()}`);
     } catch (err: any) {
-      alert(`Script failed: ${err.message || String(err)}`);
+      // ❌ failure: navigate (or keep alert if you prefer)
+      router.push(`${failureHref}?err=${encodeURIComponent(err?.message || "Script failed")}`);
+      // or: alert(`Script failed: ${err?.message || String(err)}`);
     } finally {
       setBusy(false);
-      router.push("/import")
     }
   };
 
