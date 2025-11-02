@@ -149,14 +149,14 @@ def createAssignment(creds, course, llmResponse, type, i, j, topic):
             
             if due_date_obj < datetime.date.today():
                 print(f"Due Date Found in Syllabus Has Passed for {sub["name"]}. Creating Assignment Without Due Date")
-
-            coursework["dueDate"] = {
-                "year": due_date["year"],
-                "month": due_date["month"],
-                "day": due_date["day"]
-            }
-            # Add a default due time (11:59 PM UTC)
-            coursework["dueTime"] = {"hours": 23, "minutes": 59, "seconds": 0}
+            else:
+                coursework["dueDate"] = {
+                    "year": due_date["year"],
+                    "month": due_date["month"],
+                    "day": due_date["day"]
+                }
+                # Add a default due time (11:59 PM UTC)
+                coursework["dueTime"] = {"hours": 23, "minutes": 59, "seconds": 0}
         
         # 3. Create the assignment
         new_assignment = (
@@ -203,8 +203,8 @@ def buildAll(creds, llmResponse, course):
         currTopic = buildModule(creds, course, llmResponse, i)
         for j,temp in enumerate(llmResponse["modules"][i]["assignments"]):
             createAssignment(creds, course, llmResponse, "assignments", i, j, currTopic)
-        for k,temp in enumerate(llmResponse["modules"][i]["quiz_assignments"]):
-            createAssignment(creds, course, llmResponse, "quiz_assignments", i, k, currTopic)
+        '''for k,temp in enumerate(llmResponse["modules"][i]["quiz_assignments"]):
+            createAssignment(creds, course, llmResponse, "quiz_assignments", i, k, currTopic)'''
         for L,temp in enumerate(llmResponse["modules"][i]["materials"]):
             createMaterial(creds, course, llmResponse, i, L, currTopic)
     print("Class Created Sucessfully! Hopefully :)")
