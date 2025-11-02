@@ -10,13 +10,12 @@ client = genai.Client(api_key = "AIzaSyBnqRQCzHgJU9l7tDBBTB-fLbLU_1yPkuQ")
 filepath = pathlib.Path('uploads/file.pdf')
 
 prompt = """
-Convert this into a json file with different modulus and lists with objects 
-sort by module. each module has a name and a list of assignments, quiz assignments,materials subrooted, do not need to cite
+Convert this into a json file with different modules and lists with objects 
+sort by module. each module has a name and a list of assignments and materials subrooted, do not need to cite
 
 1) Extract the course name, CRN, and room number for the ClassInfo object.
 2) Organize the course schedule into a list of modules (e.g., by week or by topic).
-3) Populate the assignments array with all homework and projects.
-4) Populate the quiz_assignments array with all midterms, quizzes, and exams.
+3) Populate the assignments array with all homework and projects, midterms, quizzes, and exams.
 5) Populate the materials array with lecture topics, instructor information, and other resources."
 
 This is a template that I want you to follow:
@@ -38,9 +37,7 @@ This is a template that I want you to follow:
             "month": 9,
             "day": 1
           }
-        }
-      ],
-      "quiz_assignments": [
+        },
         {
           "name": "Quiz 1 Name",
           "description": "Description of the quiz or exam.",
@@ -85,6 +82,7 @@ This is a template that I want you to follow:
     }
   ]
 }
+
 """
 
 response = client.models.generate_content(
