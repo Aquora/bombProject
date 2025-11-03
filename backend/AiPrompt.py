@@ -5,7 +5,7 @@ import pathlib
 import json
 
 
-client = genai.Client(api_key = "AIzaSyBnqRQCzHgJU9l7tDBBTB-fLbLU_1yPkuQ")
+client = genai.Client(api_key = "") #enter your API Key for Geminai here!!
 
 filepath = pathlib.Path('uploads/file.pdf')
 
