@@ -22,12 +22,14 @@ export default function FileDropCenter({
   };
 
   return (
-    <div className="min-h-screen grid place-items-center">
+    <div className="flex justify-center w-full">
       <div
         role="button"
         tabIndex={0}
         onClick={() => inputRef.current?.click()}
-        onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && inputRef.current?.click()}
+        onKeyDown={(e) =>
+          (e.key === "Enter" || e.key === " ") && inputRef.current?.click()
+        }
         onDragOver={(e) => e.preventDefault()}
         onDragEnter={() => setIsDragging(true)}
         onDragLeave={() => setIsDragging(false)}
@@ -36,9 +38,12 @@ export default function FileDropCenter({
           setIsDragging(false);
           handleFiles(e.dataTransfer.files);
         }}
-        className={`w-[min(92vw,720px)] border-2 border-dashed rounded-2xl p-8 text-center cursor-pointer ${
-          isDragging ? "border-blue-500 ring-4 ring-blue-100" : "border-neutral-300"
-        }`}
+        className={`w-full max-w-xl border-2 border-dashed rounded-2xl p-8 text-center transition-all cursor-pointer 
+          ${
+            isDragging
+              ? "border-green-500 bg-green-50"
+              : "border-gray-300 bg-linear-to-r from-green-50 to-white hover:from-green-100 hover:to-white"
+          }`}
       >
         <input
           ref={inputRef}
@@ -48,8 +53,12 @@ export default function FileDropCenter({
           onChange={(e) => handleFiles(e.target.files)}
           className="sr-only"
         />
-        <h2 className="text-xl text-white font-semibold">Import your Syllabus</h2>
-        <p className="text-sm text-white">Drag & drop or click to browse</p>
+        <h2 className="text-lg font-semibold text-green-600">
+          Import your Syllabus
+        </h2>
+        <p className="text-sm text-gray-500">
+          Drag & drop or click to browse
+        </p>
       </div>
     </div>
   );

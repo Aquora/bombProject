@@ -1,4 +1,4 @@
-import ClientUpload from "../app/components/ClientUpload";
+import ClientUpload from "./components/ClientUpload";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -23,25 +23,32 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <>
-      {/* ================= HEADER ================= */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
-        <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/Images/faviconseal.png"
-              alt="Smart Classroom"
-              width={45}
-              height={45}
-              priority
-              className="rounded-md shadow-sm"
-            />
-            <h1 className="text-xl font-semibold text-gray-900 tracking-tight">
-              Smart Classroom
-            </h1>
-          </div>
-        </div>
-      </header>
+    <> <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+  <div className="w-full px-6 py-4 flex items-center justify-start">
+    {/* Logo + Text aligned top-left */}
+    <div className="flex items-center gap-3">
+      <Image
+        src="/Images/faviconseal.png"
+        alt="Smart Classroom"
+        width={45}
+        height={45}
+        priority
+        className="rounded-md shadow-sm"
+      />
+      <h1
+          className="text-3xl md:text-3xl font-extrabold tracking-tight 
+                   bg-linear-to-r from-green-500 via-green-500 to-green-400 
+                   bg-clip-text text-transparent drop-shadow-sm"
+
+      >
+        Smart Classroom
+      </h1>
+    </div>
+  </div>
+</header>
+
+
+
 
       {/* ================= HERO + HOW IT WORKS ================= */}
       <main className="bg-white min-h-screen text-gray-800 pt-32 pb-24">
@@ -57,11 +64,17 @@ export default function Page() {
           <p className="text-gray-600 text-lg md:text-xl max-w-2xl leading-relaxed mt-4">
             Automatically build your Google Classroom from any syllabus.
             <br className="hidden md:block" />
-            Save time — let Smart Classroom handle assignments, due dates, and setup for you.
+            Save time and let Smart Classroom handle assignments, due dates, and setup for you.
           </p>
 
-          <div className="mt-6">
-          </div>
+         <div className="mt-10 flex justify-center w-full">
+          <div className="w-full max-w-2xl px-6">
+          <ClientUpload />
+  </div>
+</div>
+
+
+
         </section>
 
         {/* HOW IT WORKS SECTION */}
@@ -83,7 +96,7 @@ export default function Page() {
                 Upload Your Syllabus
               </h4>
               <p className="text-gray-600">
-                Drop in your syllabus (PDF) and let Smart
+                Drop in your syllabus and let Smart
                 Classroom do the rest.
               </p>
             </div>

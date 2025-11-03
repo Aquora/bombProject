@@ -28,18 +28,26 @@ export default function Loading() {
   return (
     <>
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur border-b border-gray-300">
-        <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div className="w-full px-6 py-4 flex items-center justify-start">
+          {/* Logo + Text aligned top-left */}
           <div className="flex items-center gap-3">
             <Image
               src="/Images/faviconseal.png"
               alt="Smart Classroom"
-              width={40}
-              height={40}
+              width={45}
+              height={45}
               priority
-              className="rounded-md"
+              className="rounded-md shadow-sm"
             />
-            <h1 className="text-lg text-gray-800 font-semibold">Smart Classroom</h1>
+            <h1
+                className="text-3xl md:text-3xl font-extrabold tracking-tight 
+                         bg-linear-to-r from-green-500 via-green-500 to-green-400 
+                         bg-clip-text text-transparent drop-shadow-sm"
+      
+            >
+              Smart Classroom
+            </h1>
           </div>
         </div>
       </header>

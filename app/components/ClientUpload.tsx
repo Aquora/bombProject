@@ -48,7 +48,7 @@ export default function ClientUpload() {
         } else {
           updateRun(name, "error", runData?.error ?? `Run failed (${runRes.status})`);
         }
-        router.push("/import");
+        router.push("/");
       }
     } catch (err: any) {
       console.error(err);
