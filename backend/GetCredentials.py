@@ -1,3 +1,3 @@
-from backend.GoogleLogic import *
+from GoogleLogic import *
 
 credentials = get_credentials()
